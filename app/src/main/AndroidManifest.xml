@@ -25,6 +25,7 @@
             android:permission="android.permission.BROADCAST_SMS">
             <intent-filter>
                 <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+                <!--pada action diatas akan merespon jika ada sms masuk ke perangkat sesuai dengan permsiison yang di berikan. Lalu di dalam SmsReciver ada onReceive yang memproses metadata dari sms yang masuk-->
             </intent-filter>
         </receiver>
 
